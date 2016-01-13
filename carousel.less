@@ -1,0 +1,114 @@
+.carousel-container {
+  position: relative;
+  min-width: 1100px;
+  height: 540px;
+  width: 100%;
+  overflow: hidden;
+  margin: 10px 0 60px;
+  .carousel-wrapper {
+    height: 540px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .item {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+    float: left;
+    position: relative;
+    display: block;
+    .i {
+      background: #68be3c;
+      opacity: 0.8;
+      height: 128px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .io {
+      padding-top: 450px;
+      color: #fff;
+      position: relative;
+      div {
+        float: left;
+      }
+    }
+    .title {
+      border-right: 1px solid #aed59c;
+      width: 505px;
+      padding-right: 20px;
+      color:#fff;
+      font-size: 36px;
+      line-height: 40px;
+      text-align: right;
+    }
+    .intro {
+      width: 400px;
+      padding-left: 20px;
+      line-height: 20px;
+      font-size: 16px;
+    }
+  }
+  .arr {
+    background: url(./img/arr.png) no-repeat;
+    width: 63px;
+    height: 83px;
+    top: 220px;
+    margin-top: -42px;
+    position: absolute;
+    cursor: pointer;
+  }
+  .arr-left {
+    background-position: 12px 8px;
+    left: 0;
+    &:hover {
+      background-position: 12px -90px;
+    }
+  }
+
+  .arr-right {
+    background-position: -76px 8px;
+    right: 0;
+    &:hover {
+      background-position: -76px -90px;
+    }
+  }
+
+  .arr-wrapper {
+    position: relative;
+    left: 0;
+  }
+
+  .carousel-nav {
+    text-align: center;
+    position: relative;
+    top: 500px;
+    span {
+      width: 8px;
+      height: 8px;
+      background: #448723;
+      border-radius: 4px;
+      margin: 0 5px;
+      display: inline-block;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+    .current {
+      width: 24px;
+      background: #fff;
+    }
+  }
+  .de {
+    background: url(./img/de.png) repeat-x 50% 50%;
+    height: 17px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+  }
+}
